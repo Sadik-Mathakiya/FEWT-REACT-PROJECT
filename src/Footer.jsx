@@ -3,12 +3,12 @@ import React from 'react'
 function Footer() {
   return (
     <>
-       <footer class="footer">
-            <div class="footer-in">
-                <p>© 2026 MovieBox. All rights reserved.</p>
+       <div className="footer">
+            <div className="footerInner">
+                <p>© 2026 MovieBox </p>
                 <p>Created by Sadik Mathakiya</p>
             </div>
-        </footer>
+        </div>
     </>
   )
 }

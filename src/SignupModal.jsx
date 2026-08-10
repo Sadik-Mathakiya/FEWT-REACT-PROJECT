@@ -5,8 +5,8 @@ function SignupModal() {
     
     <>
     <div id="signup-modal" className="modal">
-            <div className="modal-box">
-                <a className="close-btn" href="#">×</a>
+            <div className="modalCard">
+                <a className="closeButton" href="#">×</a>
                 <h2>Create Account</h2>
                 <p>Sign up with your email to get access to all movie trailers and details.</p>
                 <form>
@@ -17,9 +17,9 @@ function SignupModal() {
                     <label htmlFor="signup-password">Create password</label>
                     <input id="signup-password" type="password" placeholder="Create a password" required/>
                     <button type="submit">Sign Up</button>
-                    <small>We only use this info to personalize your MovieBox experience.</small>
+                   
                 </form>
-                <div className="modal-foot">Already have account? <a href="#login-modal">Log in</a></div>
+                <div className="modalFooter">Already have account? <a href="#login-modal">Log in</a></div>
             </div>
         </div>
     </>

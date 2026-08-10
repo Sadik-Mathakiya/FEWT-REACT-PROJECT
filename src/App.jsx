@@ -17,7 +17,7 @@ function App() {
     <>
     <BrowserRouter>
            <Navbar/>          
-    <main className="main">
+    <main className="page">
       
        <Routes>
           <Route path="/home.html" element={<> <Trailermovie/><Moviecard />  </> } />

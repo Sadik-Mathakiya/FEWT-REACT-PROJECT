@@ -1,57 +1,100 @@
-import React from 'react'
+import React from 'react';
 
 function Trailermovie() {
   return (
     <>
-      <section className="hero">
-                <div className="hero-text">
-                    <p className="note">MovieBox</p>
-                </div>
-            </section>
+      <div className="heroSection">
+        <div className="heroContent">
+          <p className="heroNote">MovieBox</p>
+        </div>
+      </div>
 
-            <section className="trailers">
-                <h2>Latest Trailers</h2>
-                <div className="trailers-list">
-                    <div className="trailer-item">
-                        <video autoPlay muted playsInline controls className="trailer-video">
-                            <source src="Videos/M.S.Dhoni - The Untold Story _ Official Trailer _ Sushant Singh Rajput _ Neeraj Pandey_1080p.mp4" type="video/mp4"/>
-                            Your browser does not support the video tag.
-                        </video>
-                        <div className="trailer-title">M.S. Dhoni: The Untold Story</div>
-                    </div>
-                    <div className="trailer-item">
-                        <video autoPlay muted playsInline controls className="trailer-video">
-                            <source src="Videos/Jana Nayagan - Official Trailer _ Thalapathy Vijay _ Pooja Hegde _ H Vinoth _ Anirudh _ KVN_1080p.mp4" type="video/mp4"/>
-                            Your browser does not support the video tag.
-                        </video>
-                        <div className="trailer-title">Jana Nayagan</div>
-                    </div>
-                    <div className="trailer-item">
-                        <video autoPlay muted playsInline controls className="trailer-video">
-                            <source src="Videos/Scam 1992 – The Harshad Mehta Story _ Official Trailer _ Streaming on Sony Liv_1080p.mp4" type="video/mp4"/>
-                            Your browser does not support the video tag.
-                        </video>
-                        <div className="trailer-title">Scam 1992</div>
-                    </div>
-                    <div className="trailer-item">
-                        <video autoPlay muted playsInline controls className="trailer-video">
-                            <source src="Videos/Karuppu (Hindi) - Teaser _ Suriya _ RJB _ Trisha l Fan Dubbed_1080p60.mp4" type="video/mp4"/>
-                            Your browser does not support the video tag.
-                        </video>
-                        <div className="trailer-title">Karuppu</div>
-                    </div>
-                    <div className="trailer-item">
-                        <video autoPlay muted playsInline controls className="trailer-video">
-                            <source src="Videos/YTDown.com_YouTube_Lucky-Baskhar-Hindi-Trailer-Dulquer-Salm_Media_x8h5zBQxpbM_002_720p.mp4" type="video/mp4"/>
-                            Your browser does not support the video tag.
-                        </video>
-                        <div className="trailer-title">Lucky Baskhar</div>
-                    </div>
-                </div>
-            </section>
+      <div className="trailerSection">
+        <h2>Latest Trailers</h2>
+        <div className="trailerList">
+          <div className="trailerCard">
+            <iframe
+              className="trailerFrame"
+              src="https://www.youtube.com/embed/6L6XqWoS8tw"
+              title="M.S. Dhoni: The Untold Story"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+            <div className="trailerTitle">M.S. Dhoni: The Untold Story</div>
+            <a className="trailerLink" href="https://www.youtube.com/watch?v=6L6XqWoS8tw" target="_blank" rel="noreferrer">
+              Watch on YouTube
+            </a>
+          </div>
 
-            </>
-  )
+          <div className="trailerCard">
+            <iframe
+              className="trailerFrame"
+              src="https://www.youtube.com/embed/fJaAYcERf3Y"
+              title="Jana Nayagan"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+            <div className="trailerTitle">Jana Nayagan</div>
+            <a className="trailerLink" href="https://www.youtube.com/watch?v=fJaAYcERf3Y" target="_blank" rel="noreferrer">
+              Watch on YouTube
+            </a>
+          </div>
+
+          <div className="trailerCard">
+            <iframe
+              className="trailerFrame"
+              src="https://www.youtube.com/embed/ISORfez27og"
+              title="Scam 1992"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+            <div className="trailerTitle">Scam 1992</div>
+            <a className="trailerLink" href="https://www.youtube.com/watch?v=ISORfez27og" target="_blank" rel="noreferrer">
+              Watch on YouTube
+            </a>
+          </div>
+
+          <div className="trailerCard">
+            <iframe
+              className="trailerFrame"
+              src="https://www.youtube.com/embed/JpVl_-1YgIo"
+              title="Karuppu"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+            <div className="trailerTitle">Karuppu</div>
+            <a className="trailerLink" href="https://www.youtube.com/watch?v=JpVl_-1YgIo" target="_blank" rel="noreferrer">
+              Watch on YouTube
+            </a>
+          </div>
+
+          <div className="trailerCard">
+            <iframe
+              className="trailerFrame"
+              src="https://www.youtube.com/embed/w8EDX5KqFLg"
+              title="Lucky Baskhar"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+            <div className="trailerTitle">Lucky Baskhar</div>
+            <a className="trailerLink" href="https://www.youtube.com/watch?v=w8EDX5KqFLg" target="_blank" rel="noreferrer">
+              Watch on YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Trailermovie
+export default Trailermovie;
