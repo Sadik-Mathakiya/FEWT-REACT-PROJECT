@@ -1,27 +1,26 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function SignupModal() {
   return (
-    
     <>
-    <div id="signup-modal" className="modal">
-            <div className="modalCard">
-                <a className="closeButton" href="#">×</a>
-                <h2>Create Account</h2>
-                <p>Sign up with your email to get access to all movie trailers and details.</p>
-                <form>
-                    <label htmlFor="signup-name">Full name</label>
-                    <input id="signup-name" type="text" placeholder="Enter your full name" required/>
-                    <label htmlFor="signup-email">Email</label>
-                    <input id="signup-email" type="email" placeholder="Enter your email" required/>
-                    <label htmlFor="signup-password">Create password</label>
-                    <input id="signup-password" type="password" placeholder="Create a password" required/>
-                    <button type="submit">Sign Up</button>
-                   
-                </form>
-                <div className="modalFooter">Already have account? <a href="#login-modal">Log in</a></div>
-            </div>
+      <div id="signup-modal" className="modal">
+        <div className="modalCard">
+          <Link className="closeButton" to="#">×</Link>
+          <h2>Create Account</h2>
+          <p>Sign up with your email to get access to all movie trailers and details.</p>
+          <form>
+            <label htmlFor="signup-name">Full name</label>
+            <input id="signup-name" type="text" placeholder="Enter your full name" required/>
+            <label htmlFor="signup-email">Email</label>
+            <input id="signup-email" type="email" placeholder="Enter your email" required/>
+            <label htmlFor="signup-password">Create password</label>
+            <input id="signup-password" type="password" placeholder="Create a password" required/>
+            <button type="submit">Sign Up</button>
+          </form>
+          <div className="modalFooter">Already have account? <Link to="#login-modal">Log in</Link></div>
         </div>
+      </div>
     </>
   )
 }

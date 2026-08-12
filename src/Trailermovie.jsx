@@ -80,13 +80,13 @@ function Trailermovie() {
             <iframe
               className="trailerFrame"
               src="https://www.youtube.com/embed/w8EDX5KqFLg"
-              title="Lucky Baskhar"
+              title="Lucky Baskar"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             />
-            <div className="trailerTitle">Lucky Baskhar</div>
+            <div className="trailerTitle">Lucky Baskar</div>
             <a className="trailerLink" href="https://www.youtube.com/watch?v=w8EDX5KqFLg" target="_blank" rel="noreferrer">
               Watch on YouTube
             </a>
