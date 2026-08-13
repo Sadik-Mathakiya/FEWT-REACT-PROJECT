@@ -6,7 +6,7 @@ function LoginModal() {
     <>
       <div id="login-modal" className="modal">
         <div className="modalCard">
-          <Link className="closeButton" to="#">×</Link>
+          <Link className="closeButton" to={{ hash: '' }} onClick={(e) => { e.preventDefault(); window.location.hash = ''; }}>×</Link>
           <h2>Welcome Back</h2>
           <p>Sign in to continue watching movie trailers</p>
           <form>
@@ -16,7 +16,7 @@ function LoginModal() {
             <input id="login-password" type="password" placeholder="Enter your password" required/>
             <button type="submit">Log In</button>
           </form>
-          <div className="modalFooter">New here? <Link to="#signup-modal">Create an account</Link></div>
+          <div className="modalFooter">New here? <Link to={{ hash: '#signup-modal' }} onClick={(e) => { e.preventDefault(); window.location.hash = '#signup-modal'; }}>Create an account</Link></div>
         </div>
       </div>
     </>

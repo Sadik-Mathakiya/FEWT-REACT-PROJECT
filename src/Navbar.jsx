@@ -17,8 +17,20 @@ function Navbar() {
           </NavLink>
         </div>
         <div className="navActions">
-          <Link className="btn out" to="#login-modal">Log in</Link>
-          <Link className="btn pri" to="#signup-modal">Sign Up</Link>
+          <Link
+            className="btn out"
+            to={{ hash: '#login-modal' }}
+            onClick={(e) => { e.preventDefault(); window.location.hash = '#login-modal'; }}
+          >
+            Log in
+          </Link>
+          <Link
+            className="btn pri"
+            to={{ hash: '#signup-modal' }}
+            onClick={(e) => { e.preventDefault(); window.location.hash = '#signup-modal'; }}
+          >
+            Sign Up
+          </Link>
         </div>
       </div>
     </div>
